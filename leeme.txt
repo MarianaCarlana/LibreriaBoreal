@@ -1,0 +1,13 @@
+Creé el index.html para empezar el proyecto
+Hago la conexión con la API de Google Fonts 
+También linkeo para agregar el archivo styles.css donde estarán los estilos de cada parte de la página web 
+Agrego el logo, título y menú de mi tienda en el header
+Creo un section para implementar un banner luego del titulo de mi página
+Luego creo un main para agregar los libros de manera organizada haciendo uso de div, sólo agregué tres pero podría agregar más 
+Creo otra sección de contacto donde utilizo el formspree para crear el formulario
+
+
+En el archivo styles.css fui colocando los estilos para cada parte 
+Un estilo general que lo defino con *{ }
+
+
