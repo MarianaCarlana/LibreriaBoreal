@@ -15,11 +15,18 @@ header {
     align-items : center ;
     background-color : #9F8C76 ;
     color : white ;
+    position : sticky ;
     padding : 15px 30px ;
 }
 
+header nav {
+    display : flex ;
+    gap : 20px ;
+} 
+
 header nav a {
     margin-top : 10px ;
+    position : relative ;
 }
 
 header nav a:hover {
@@ -27,11 +34,16 @@ header nav a:hover {
 }
 
 .logo-titulo {
+    display : flex ;
+    align-items : center ;
     color : white ;
     font-size : 28px ;
+    gap : 10px ;
 }
 
 .titulo {
+    display : flex ;
+    align-items : center ;
     color : green ;
     font-size : 28px ;
 }
@@ -174,4 +186,24 @@ footer {
     text-align : center ;
     padding : 20px ;
     margin-top : 40px ;
+}
+
+@media(max-width: 600px){
+
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 900px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
