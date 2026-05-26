@@ -191,19 +191,59 @@ footer {
 @media(max-width: 600px){
 
     header{
-        padding: 20px;
+        padding: 15px;
+        gap : 5px ;
+        align-items : center ;
     }
 
     nav{
-        gap: 20px;
+        gap: 18px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .titulo {
+        align-items : center ;
+        font-size : 18px ;
+    }
+
+    .banner {
+        padding : 20px 20px ;
+}
+
+    .banner h2 {
+        font-size : 15px ;
+        margin-bottom : 5 ;
+}
+
+    .banner p {
+        font-size : 15px ;
+        margin-bottom : 5 ;
     }
 }
 @media(max-width: 900px){
 
     header{
         flex-direction: column;
-        gap: 20px;
+        gap: 5px;
+        align-items : center ;
+    }
+
+    .titulo {
+        align-items : center ;
+        font-size : 18px ;
+    }
+
+    .banner {
+        padding : 20px 20px ;
+}
+    .banner h2 {
+        font-size : 15px ;
+        margin-bottom : 5 ;
+    }
+
+    .banner p {
+        font-size : 15px ;
+        margin-bottom : 5 ;
     }
 }
