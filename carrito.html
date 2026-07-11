@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Librería Boreal</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+
+    <body>
+
+        <header> 
+            <div class="logo-titulo">
+                <a href="#"><img src="img/Libreria.jpg" alt="logo principal" width = 100px height = 100px></a>
+                      
+            </div> 
+            
+            <div class="titulo">
+                <h1>Librería Boreal</h1> 
+            </div>
+            <nav>
+                
+                <a href="index.html">Inicio</a> 
+                <a href="index.html">Libros</a> 
+                <a href="carrito.html" id="link-carrito">Carrito(<span id ="contador-carrito">0</span>)</a> 
+                <a href="contacto.html">Contacto</a> 
+            </nav>
+        </header>
+
+        <section class="banner">
+            <h2>Carrito de Compras</h2>
+            <p>Calidad garantizada</p>
+        </section>
+
+        <!--<h1>Carrito de Compras</h1>-->
+        <div id="carrito"></div>
+        <h2 id="total"></h2>
+
+        <div class="acciones-carrito">
+            <a href="index.html">
+                <button class="btn-continuar">Continuar comprando</button>
+            </a>
+            <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+        </div>
+
+        <script src="carrito.js"></script>
+
+        <button class="btn-vaciar" onclick = "vaciarCarrito()">Vaciar carrito</button>
+
+        <footer>
+            <p>Copyright © 2026 Librería Boreal - Todos los derechos reservados</p>
+        </footer>
+    <script src = "script.js"></script>
+    </body>
+</html>

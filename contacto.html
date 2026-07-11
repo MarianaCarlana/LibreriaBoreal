@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Librería Boreal</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+
+    <body>
+
+        <header> 
+            <div class="logo-titulo">
+                <a href="#"><img src="img/Libreria.jpg" alt="logo principal" width = 100px height = 100px></a>
+                      
+            </div> 
+            
+            <div class="titulo">
+                <h1>Librería Boreal</h1> 
+            </div>
+            <nav>
+                
+                <a href="index.html">Inicio</a> 
+                <a href="index.html">Libros</a> 
+                <a href="carrito.html" id="link-carrito">Carrito</a> 
+                <a href="contacto.html">Contacto</a> 
+            </nav>
+        </header>
+
+        <section class="banner">
+            <h2>Contacto</h2>
+            <p>Envíanos tus sugerencias, comentarios y preguntas...</p>
+        </section>
+
+        <main class= "contacto-pagina">
+
+            <div class="info-contacto">
+
+                <div class="dato-contacto">
+                    <h3>📍 Dirección</h3>
+                    <p>Av. Carlos Pellegrini 1555, Buenos Aires, Argentina</p>
+                </div>
+
+                <div class="dato-contacto">
+                    <h3>📞 Teléfono</h3>
+                    <p>+54 11 1555-1555</p>
+                </div>
+
+                <div class="dato-contacto">
+                    <h3>📧 Correo Electrónico</h3>
+                    <p>contacto@libreriaboreal.com</p>
+                </div>
+
+                <div class="dato-contacto">
+                    <h3>🕒 Horario de Atención</h3>
+                    <div class="horarios">
+                        <p>Lunes a Viernes: 8:00 a 17:00</p>
+                        <p>Sábados: 9:00 a 13:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5629677511465!2d-58.383472524013094!3d-34.58992325677034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab0588efd97%3A0xcb84d0daa3588c07!2sCarlos%20Pellegrini%201555%2C%20C1011AAE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1783807103140!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                    width= "100%"
+                    height="350"
+                    style="border:0"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+            
+
+            <section class="contacto-formulario">
+                <h4>Formulario de Contacto</h4>
+
+                <form action="https://formspree.io/f/mlgvgpjw" method="POST">
+
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Tu nombre (obligatorio)"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Tu correo electrónico (obligatorio)"
+                        required
+                    >
+
+                    <textarea
+                        name="mensaje"
+                        placeholder="Escribe tu mensaje"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                
+                </form>
+            </section>
+            
+        </main>
+        
+
+
+        <footer>
+            <p>Copyright © 2026 Librería Boreal - Todos los derechos reservados</p>
+        </footer>
+
+        
+    </body>
+</html>

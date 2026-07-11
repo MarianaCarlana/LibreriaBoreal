@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Librería Boreal</title>
         <link rel="stylesheet" href="styles.css">
+        
     </head>
 
     <body>
@@ -24,45 +25,52 @@
             </div>
             <nav>
                 
-                <a href="#">Inicio</a> 
+                <a href="index.html">Inicio</a> 
                 <a href="#">Libros</a> 
-                <a href="#">Carrito</a> 
-                <a href="#">Contacto</a> 
+                <a href="carrito.html" id="link-carrito">Carrito(<span id ="contador-carrito">0</span>)</a> 
+                <a href="contacto.html">Contacto</a> 
             </nav>
         </header>
 
         <section class="banner">
             <h2>¡Los mejores libros los consigues aquí!</h2>
-            <p>Novelas, Tecnología, Historia y Mucho Más...</p>
+            <p>Romance, Fantasía, Thrillers y Mucho Más...</p>
         </section>
 
+        
         <main class="libreria">
-            <!--Libro 1-->
+            <div id="contenedor-libros">
+
+            </div>
+
+            <div id = "card-libro"></div>
+            
+            <!--Libro 1
             <div class="card-libro">
                 <img src="img/emiliaDelValle.jpg" alt="EmiliaDelValle.jpg">
                 <h3>Mi Nombre Es Emilia Del Valle</h3>        
                 <p>Isabel Allende</p>
                 <span>$43.000</span>
                 <button>Comprar</button>
-            </div>
+            </div>-->
 
-            <!--Libro 2-->
+            <!--Libro 2
             <div class="card-libro">
                 <img src="img/LaPacienteSilenciosa.jpg" alt="LaPacienteSilenciosa.jpg">
                 <h3>La Paciente Silenciosa</h3>        
                 <p>Alex Michaelides</p>
                 <span>$42.000</span>
                 <button>Comprar</button>
-            </div>
+            </div>-->
 
-            <!--Libro 3-->
+            <!--Libro 3
             <div class="card-libro">
                 <img src="img/SiTeGustaLaOscuridad.jpg" alt="SiTeGustaLaOscuridad.jpg">
                 <h3>Si Te Gusta La Oscuridad</h3>        
                 <p>Stephen King</p>
                 <span>$55.000</span>
                 <button>Comprar</button>
-            </div>
+            </div>-->
         </main>
 
         <section class="contacto">
@@ -98,6 +106,7 @@
         <footer>
             <p>Copyright © 2026 Librería Boreal - Todos los derechos reservados</p>
         </footer>
+    <script src = "script.js"></script>
 
     </body>
 </html>

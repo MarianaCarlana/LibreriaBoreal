@@ -10,16 +10,16 @@ body {
 }
 
 header {
-    display : flex ;
-    justify-content : space-between ;
+    display : grid ;
+    grid-template-columns: 120px 1fr auto;
     align-items : center ;
     background-color : #9F8C76 ;
     color : white ;
-    position : sticky ;
     padding : 15px 30px ;
 }
 
 header nav {
+    justify-self: end;
     display : flex ;
     gap : 20px ;
 } 
@@ -39,11 +39,14 @@ header nav a:hover {
     color : white ;
     font-size : 28px ;
     gap : 10px ;
+    justify-self: start;
 }
 
 .titulo {
+
     display : flex ;
     align-items : center ;
+    justify-content: center;
     color : green ;
     font-size : 28px ;
 }
@@ -68,14 +71,28 @@ header nav a:hover {
     flex-wrap : wrap ;
 }
 
+#card-libro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
 .card-libro {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/**.card-libro {
     background-color : white ;
     width : 280px ;
     border-radius : 10px ;
     overflow : hidden ;
     box-shadow : 0px 4px 10px rgba(0,0,0,0.2);
     transition : 0.3s
-}
+}**/
 
 .card-libro:hover {
     transform: translateY(-5px)
@@ -87,10 +104,12 @@ header nav a:hover {
     object-fit : fill ;
 }
 
+
 .card-libro h3 {
     padding : 15px 15px 15px ;
     height : 65px ;
 }
+
 
 .card-libro p {
     padding : 0px 15px;
@@ -116,8 +135,132 @@ header nav a:hover {
     transition : 0.3s ;
 }
 
+
 .card-libro button:hover {
     background-color : #182848 ;
+}
+
+#carrito {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, 450px);
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    width: 450px;
+}
+
+.item-carrito img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.info-carrito {
+    flex: 1;
+}
+
+.info-carrito h3 {
+    margin-bottom: 10px;
+}
+
+.info-carrito p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.cantidad button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cantidad span {
+    font-weight: bold;
+    min-width: 25px;
+    text-align: center;
+}
+
+.acciones-carrito {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-continuar,
+.btn-finalizar {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+}
+
+.btn-vaciar{
+    display : flex;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn-continuar {
+    background-color: #4b6cb7;
+    color: white;
+}
+
+.btn-finalizar {
+    background-color: green;
+    color: white;
+}
+
+.btn-vaciar {
+    justify-content: center;
+    margin : auto;
+    background-color: rgb(171, 41, 41);
+    color: white;
+    margin-bottom : 10px ;
+}
+
+.btn-vaciar:hover,
+.btn-continuar:hover,
+.btn-finalizar:hover {
+    opacity: 0.9;
+}
+
+#total {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
 }
 
 .contacto {
@@ -129,6 +272,23 @@ header nav a:hover {
     align-items : center ;
 }
 
+
+
+.contacto-formulario {
+    width: 30%;
+    flex-shrink: 0;
+    background: white;
+    padding: 40px ;
+    border-radius: 20px;
+
+}
+
+
+.contacto-formulario h4{
+    margin-bottom : 30px ;
+    font-size : 35px ;
+    color : black;
+}
 .contacto h4 {
     margin-bottom : 30px ;
     font-size : 35px ;
@@ -143,6 +303,17 @@ header nav a:hover {
     gap : 20px ;
 }
 
+.contacto-formulario form {
+    display : flex ;
+    flex-direction : column ;
+    gap : 15px ;
+}
+
+.contacto-formulario input, .contacto-formulario textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 .contacto input, .contacto textarea {
     padding : 15px ;
     border : 1px solid #ccc ;
@@ -151,6 +322,7 @@ header nav a:hover {
     outline : none ;
 }
 
+.contacto-formulario button,
 .contacto button {
     width : 35% ;
     padding : 15px ;
@@ -221,9 +393,75 @@ footer {
         margin-bottom : 5 ;
     }
 }
+
+.contacto-pagina {
+    display:flex;
+    padding: 50px 80px;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.contacto-pagina h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.contacto-pagina p {
+    text-align: left;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.contacto-pagina form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-contacto {
+    width:25%;
+}
+
+.info-contacto h2 {
+    color: #182848;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.dato-contacto {
+    margin-bottom: 25px;
+}
+
+.dato-contacto h3 {
+    color: #4b6cb7;
+    margin-bottom: 8px;
+}
+
+.dato-contacto p {
+    margin-left: 30px;
+}
+
+.horarios p {
+    margin: 0;
+    margin-left:30px;
+    line-height: 1.5;
+}
+
+.mapa {
+    width: 35%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
 @media(max-width: 900px){
 
     header{
+        display: flex;
         flex-direction: column;
         gap: 5px;
         align-items : center ;
@@ -236,7 +474,7 @@ footer {
 
     .banner {
         padding : 20px 20px ;
-}
+    }
     .banner h2 {
         font-size : 15px ;
         margin-bottom : 5 ;
@@ -246,4 +484,45 @@ footer {
         font-size : 15px ;
         margin-bottom : 5 ;
     }
+
+    #card-libro {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .card-libro {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .contacto-pagina {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .contacto-formulario {
+        order: 1;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .info-contacto {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-contacto p{
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mapa {
+        order: 3;
+        width: 100%;
+        max-width: 450px;
+    }
+
 }
