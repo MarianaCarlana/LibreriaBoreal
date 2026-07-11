@@ -20,17 +20,27 @@ header {
 
 header nav {
     justify-self: end;
-    display : flex ;
-    gap : 20px ;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    gap: 10px;
 } 
 
 header nav a {
-    margin-top : 10px ;
-    position : relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 header nav a:hover {
-    color : #f0a500 ;
+    background-color: #0fcc19;
 }
 
 .logo-titulo {
